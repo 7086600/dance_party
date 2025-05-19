@@ -28,7 +28,7 @@ def plot_population_distribution(population_data):
   sns.histplot(population_data, stat='density')
   # informative title for the distribution 
   plt.title(f"Population Distribution")
-  # remove None label
+  # Clear the x-axis label for a cleaner plot appearance
   plt.xlabel('')
   plt.show()
   plt.clf()
