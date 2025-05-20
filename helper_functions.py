@@ -17,7 +17,7 @@ def choose_statistic(x, sample_stat_text):
     return np.max(x)
   # calculate variance if the text is "Variance"
   elif str.lower(sample_stat_text) == "variance":
-    return np.var(x)
+    return np.var(x, ddof=1)
   # raise error if sample_stat_text is not "mean", "minimum", or "variance"
   else:
     raise Exception('Make sure to input "mean", "minimum", "maximum", or "variance"')
